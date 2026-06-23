@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+$ipc-bg-gradient-top: #FF9797;
+$ipc-bg-gradient-bottom: #FFF0F0;
+$branding-red: #D80B0B;
+$car-play-bg: #2ECC71;
+$android-auto-bg: #4285F4;
+
+$turn-signal-inactive: color.change($branding-red, $alpha: 0.1);
+$turn-signal-active: #4AFB91;
+
+$hazard-active: $branding-red;
+$hazard-inactive: color.change($branding-red, $alpha: 0.1);
+
+$high-beam-active: #0BA16F;
+$high-beam-inactive: color.change($high-beam-active, $alpha: 0.1);
+
+$low-beam-active: #5149C6;
+$low-beam-inactive: color.change($low-beam-active, $alpha: 0.1);
+
+$ipc-bg-gradient: linear-gradient(to bottom, $ipc-bg-gradient-top, $ipc-bg-gradient-bottom);

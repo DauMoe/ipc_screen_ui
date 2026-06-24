@@ -8,12 +8,20 @@ $gear-gap: 20px;
 $gear-peek: 16px;
 $gear-window-width: $gear-active-width + 2 * $gear-gap + 2 * $gear-inactive-width +
   2 * $gear-peek;
+$gear-window-height: 70px;
 
 $ipc-width: 1600px;
 $divider-width: 555px;
 $side-center: math.div($divider-width, 2);
 
+$turn-signal-margin-top: 10px;
+$turn-signal-icon-size: 50px;
+$top-row-y: $turn-signal-margin-top + math.div($turn-signal-icon-size, 2);
+
 .speed {
+  display: block;
+  width: 480px;
+  text-align: center;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
@@ -29,7 +37,7 @@ $side-center: math.div($divider-width, 2);
 
   .brand_logo {
     position: absolute;
-    bottom: 16px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
@@ -39,8 +47,9 @@ $side-center: math.div($divider-width, 2);
 
   .datetime {
     position: absolute;
-    top: 24px;
+    top: $top-row-y;
     left: 380px;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -51,8 +60,9 @@ $side-center: math.div($divider-width, 2);
 
   .outside_temp {
     position: absolute;
-    top: 24px;
+    top: $top-row-y;
     right: 380px;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -237,6 +247,7 @@ $car-edge: 6px;
 
 .gear_carousel {
   width: $gear-window-width;
+  height: $gear-window-height;
   overflow: hidden;
   display: flex;
   flex-direction: row;

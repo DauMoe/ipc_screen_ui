@@ -13,10 +13,10 @@ $turn-signal-active: #4AFB91;
 $hazard-active: $branding-red;
 $hazard-inactive: color.change($branding-red, $alpha: 0.1);
 
-$high-beam-active: #0BA16F;
+$high-beam-active: #309cda;
 $high-beam-inactive: color.change($high-beam-active, $alpha: 0.1);
 
-$low-beam-active: #5149C6;
+$low-beam-active: #0BA16F;
 $low-beam-inactive: color.change($low-beam-active, $alpha: 0.1);
 
 $ipc-bg-gradient: linear-gradient(to bottom, $ipc-bg-gradient-top, $ipc-bg-gradient-bottom);

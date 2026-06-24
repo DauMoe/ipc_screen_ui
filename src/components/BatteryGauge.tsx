@@ -83,7 +83,11 @@ const BatteryGauge: React.FC<BatteryGaugePropsType> = ({
           stroke={needleColor}
           strokeWidth={NEEDLE_WIDTH}
           strokeLinecap="round"
-          transform={`rotate(${needleDeg} ${CENTER} ${CENTER})`}
+          style={{
+            transform: `rotate(${needleDeg}deg)`,
+            transformBox: "view-box",
+            transformOrigin: `${CENTER}px ${CENTER}px`,
+          }}
         />
       </svg>
 

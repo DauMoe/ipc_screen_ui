@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/ipc.scss'
 import CurrentTrip from "./CurrentTrip";
 import TopBar from "./TopBar";
@@ -6,29 +5,33 @@ import SpeedAndGear from "./SpeedAndGear";
 import Car from "./Car";
 import BatteryGauge from "./BatteryGauge";
 import StatusOverlay from "./StatusOverlay";
+import { FULL_RANGE_KM, type IPCState } from "../ipcState";
 
-const IPCScreen = () => {
+const IPCScreen = ({ state }: { state: IPCState }) => {
+  const rangeKm = Math.round((state.batteryPercent / 100) * FULL_RANGE_KM);
   return(
     <div className="ipc_container">
-      <StatusOverlay time="08:30" date="T2, 24/06" outsideTemp={25} />
-      <TopBar mode={"turn_right"} beam={'high'} />
-      <CurrentTrip/>
+      <StatusOverlay time={state.time} date={state.date} outsideTemp={state.outsideTemp} />
+      <TopBar mode={state.turnSignal} beam={state.beam} />
+      <CurrentTrip tripRange={state.tripRange} tripDuration={state.tripDuration} />
       <div className="gauge_area">
-        <BatteryGauge rangeKm={301} batteryPercent={80} odoKm={12345} isCharging={true} />
+        <BatteryGauge
+          rangeKm={rangeKm}
+          batteryPercent={state.batteryPercent}
+          odoKm={state.odoKm}
+          isCharging={state.isCharging}
+        />
       </div>
       <div className="speed_gear">
         <SpeedAndGear
-          speed={60}
-          gear={"N"}
-          isSeatbeltOpen={true}
-          isParking={false}
+          speed={state.speed}
+          gear={state.gear}
+          isSeatbeltOpen={state.isSeatbeltOpen}
+          isParking={state.isParking}
         />
       </div>
       <div className="car_area">
-        <Car
-          doors={{ fl: true, fr: true, rl: false, rr: false }}
-          tires={{ fl: 2.4, fr: 2.5, rl: 2.3, rr: 2.4 }}
-        />
+        <Car doors={state.doors} tires={state.tires} />
       </div>
     </div>
   )

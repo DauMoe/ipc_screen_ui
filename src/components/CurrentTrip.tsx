@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/ipc.scss";
 import divImg from "../assets/top_left_div.svg"
 import bottomDivImg from "../assets/bottom_div.svg"

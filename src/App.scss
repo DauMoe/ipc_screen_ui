@@ -1,18 +1,20 @@
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
   min-height: 100vh;
-  padding: 2rem;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+.ipc_stage {
+  width: 100%;
+  overflow: hidden;
+}
 
-  p {
-    color: var(--text);
-    opacity: 0.8;
-  }
+.ipc_scaler {
+  width: 1600px;
+  height: 600px;
+  transform-origin: top left;
 }

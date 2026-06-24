@@ -28,7 +28,7 @@ const SpeedAndGear: React.FC<SpeedAndGearPropsType> = ({
         />
         <Sidebar isSeatbeltOpen={isSeatbeltOpen} isParking={isParking} />
       </div>
-      <GearCarousel gear={gear} style={{ marginTop: "-30px" }} />
+      <GearCarousel gear={gear} style={{ marginTop: "-60px" }} />
     </div>
   );
 };

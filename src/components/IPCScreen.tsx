@@ -5,10 +5,12 @@ import TopBar from "./TopBar";
 import SpeedAndGear from "./SpeedAndGear";
 import Car from "./Car";
 import BatteryGauge from "./BatteryGauge";
+import StatusOverlay from "./StatusOverlay";
 
 const IPCScreen = () => {
   return(
     <div className="ipc_container">
+      <StatusOverlay time="08:30" date="T2, 24/06" outsideTemp={25} />
       <TopBar mode={"turn_right"} beam={'high'} />
       <CurrentTrip/>
       <div className="gauge_area">

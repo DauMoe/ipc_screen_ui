@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ipc.scss";
-import divImg from "../assets/top_left_div.png"
-import bottomDivImg from "../assets/bottom_div.png"
+import divImg from "../assets/top_left_div.svg"
+import bottomDivImg from "../assets/bottom_div.svg"
 import Icon from "./Icon";
 import Text from "./Text";
 
@@ -29,6 +29,10 @@ const CurrentTrip = ({
           </div>
           <img src={bottomDivImg} className="bottom" />
         </div>
+      </div>
+      <div className="bottom_div">
+        <img src={divImg} className="left" />
+        <img src={divImg} className="right" />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from "react";
 
 interface TextProps {
-  content?: string;
+  content?: string | number;
   fontWeight?: React.CSSProperties["fontWeight"];
   fontSize?: number;
   textColor?: string;

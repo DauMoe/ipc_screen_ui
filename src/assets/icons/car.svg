@@ -1,0 +1,24 @@
+<svg width="157" height="242" viewBox="0 0 157 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- ===== Than xe (co dinh) ===== -->
+  <g id="body">
+    <line x1="7.5" y1="-7.5" x2="28.0882" y2="-7.5" transform="matrix(0 -1 0.997154 -0.0753836 156.375 70.5879)" stroke="white" stroke-width="15" stroke-linecap="round"/>
+    <line x1="7.5" y1="-7.5" x2="28.0882" y2="-7.5" transform="matrix(0 -1 0.997154 -0.0753836 24.6761 71.1768)" stroke="white" stroke-width="15" stroke-linecap="round"/>
+    <line x1="7.5" y1="-7.5" x2="28.0882" y2="-7.5" transform="matrix(0 -1 0.997154 -0.0753836 24.6761 222.782)" stroke="white" stroke-width="15" stroke-linecap="round"/>
+    <line x1="7.5" y1="-7.5" x2="28.0882" y2="-7.5" transform="matrix(0 -1 0.997154 -0.0753836 156.375 222.588)" stroke="white" stroke-width="15" stroke-linecap="round"/>
+    <path d="M28.5466 30C28.5466 13.4315 41.9781 0 58.5466 0H107.737C124.306 0 137.737 13.4315 137.737 30V224C137.737 233.941 129.679 242 119.737 242H46.5466C36.6055 242 28.5466 233.941 28.5466 224V30Z" fill="white"/>
+    <path d="M39.2923 66.2647C39.2923 55.219 48.2466 46.2646 59.2923 46.2646H106.685C117.731 46.2646 126.685 55.219 126.685 66.2647V88.8141H39.2923V66.2647Z" fill="#A1E1FF"/>
+    <path d="M38.9456 202.64C38.9456 213.685 47.9 222.64 58.9456 222.64H107.338C118.384 222.64 127.338 213.685 127.338 202.64V188.76H38.9456V202.64Z" fill="#A1E1FF"/>
+    <line x1="58.0443" y1="11.876" x2="108.24" y2="11.876" stroke="#91CFFF" stroke-width="5" stroke-linecap="round"/>
+    <rect x="46.6006" y="98.9355" width="73.0827" height="76.8706" rx="2" fill="#B9F4FF"/>
+  </g>
+
+  <!-- ===== 4 canh cua (doc lap, moi canh 1 id) ===== -->
+  <!-- front-left = cua tai (trai - tren) -->
+  <line id="door-fl" x1="4.00004" y1="117.356" x2="32.0041" y2="85.3739" stroke="#D80B0B" stroke-opacity="0.2" stroke-width="8" stroke-linecap="round"/>
+  <!-- rear-left (trai - duoi) -->
+  <line id="door-rl" x1="3.5" y1="-3.5" x2="30.5" y2="-3.5" transform="matrix(0 -1 -1 0 24.3746 176)" stroke="#D80B0B" stroke-opacity="0.2" stroke-width="7" stroke-linecap="round"/>
+  <!-- front-right (phai - tren) -->
+  <line id="door-fr" x1="138.874" y1="122.5" x2="138.874" y2="92.5" stroke="#D80B0B" stroke-opacity="0.2" stroke-width="7" stroke-linecap="round"/>
+  <!-- rear-right (phai - duoi) -->
+  <line id="door-rr" x1="138.875" y1="172.5" x2="138.875" y2="145.5" stroke="#D80B0B" stroke-opacity="0.2" stroke-width="7" stroke-linecap="round"/>
+</svg>
